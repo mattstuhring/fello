@@ -121,3 +121,22 @@ $(document).ready(function() {
     slideMargin: 50
   });
 });
+
+// Add counter
+$(document).ready(function() {
+  'use strict';
+
+  $('.count-num').counterUp({
+    delay: 10,
+    time: 2000
+  });
+});
+
+// Add animation/initialization Wow
+$(document).ready(function() {
+  'use strict';
+
+  new WOW().init();
+
+
+});
