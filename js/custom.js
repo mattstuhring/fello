@@ -1,4 +1,4 @@
-/* Show and hide menu */
+// Show and hide menu bar
 $(document).ready(function() {
   'use strict';
 
@@ -37,6 +37,7 @@ $(document).ready(function() {
   });
 });
 
+// smooth scroll
 $(document).ready(function() {
   'use strict';
 
@@ -54,7 +55,7 @@ $(document).ready(function() {
   });
 });
 
-/* active menu item on click */
+// active menu item on click
 $(document).ready(function() {
   'use strict';
 
@@ -87,5 +88,36 @@ $(document).ready(function() {
         $(".navbar-nav li a[href='#" + elementID + "']").parent().removeClass('active');
       }
     });
+  });
+});
+
+// add auto padding to header
+$(document).ready(function() {
+  'use strict';
+
+  setInterval(function() {
+    'use strict';
+
+    var windowHeight = $(window).height();
+    var containerHeight = $('.header-container').height();
+    var padTop = windowHeight - containerHeight;
+
+    $('.header-container').css({
+      'padding-top': Math.round(padTop / 2) + 'px',
+      'padding-bottom': Math.round(padTop / 2) + 'px',
+    }, 10);
+  });
+});
+
+// Add bx slider to screen images
+$(document).ready(function() {
+  'use strict';
+
+  $('.bxslider').bxSlider({
+    slideWidth: 292.5,
+    auto: true,
+    minSlides: 1,
+    maxSlides: 3,
+    slideMargin: 50
   });
 });
