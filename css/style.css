@@ -73,7 +73,7 @@ p {
   color: #129CF3;
 }
 
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
   color: #B5B5B5;
 }
 
@@ -88,9 +88,9 @@ p {
   -moz-transition: all 1s;
 }
 
-.navbar-default .navbar-nav > .active>a,
-.navbar-default .navbar-nav > .active>a:hover,
-.navbar-default .navbar-nav > .active>a:focus {
+.navbar-default .navbar-nav > .active> a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
   color: #129CF3;
 }
